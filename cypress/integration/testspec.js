@@ -6,7 +6,7 @@ describe('Integration test with visual testing', function() {
 
     it('Loads the homepage', function() {
       // Load the page or perform any other interactions with the app.
-      cy.visit(Cypress.env('baseurl'));
+      cy.visit(Cypress.env('tempurl'));
       cy.wait(1000);
 
       //Verifying the content
@@ -19,7 +19,7 @@ describe('Integration test with visual testing', function() {
 
     it('Loads the Pricing page', function() {
       // Load the page or perform any other interactions with the app.
-      cy.visit(Cypress.env('baseurl')+'/pricing');
+      cy.visit(Cypress.env('tempurl')+'/pricing');
       cy.wait(1000);
 
       //Verifying the content
@@ -32,7 +32,7 @@ describe('Integration test with visual testing', function() {
 
     it('Loads the Integration autonmate page', function() {
       // Load the page or perform any other interactions with the app.
-      cy.visit(Cypress.env('baseurl')+"/integrations/automate");
+      cy.visit(Cypress.env('tempurl')+"/integrations/automate");
       cy.wait(1000);
 
       //Verifying the content
@@ -45,7 +45,7 @@ describe('Integration test with visual testing', function() {
 
     it('Loads the Documents page', function() {
       // Load the page or perform any other interactions with the app.
-      cy.visit(Cypress.env('baseurl')+"/docs");
+      cy.visit(Cypress.env('tempurl')+"/docs");
       cy.wait(1000);
 
       //Verifying the content
